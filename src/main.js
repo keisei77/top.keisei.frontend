@@ -3,6 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import vueTap from 'v-tap'
+
+Vue.use(vueTap)
 
 Vue.config.productionTip = false
 
