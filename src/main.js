@@ -4,7 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import vueTap from 'v-tap'
+import Vuetify from 'vuetify'
 
+Vue.use(Vuetify)
 Vue.use(vueTap)
 
 Vue.config.productionTip = false
