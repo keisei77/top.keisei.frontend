@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <loading></loading>
+    <loading :show="isShowLoading"></loading>
   </div>
 </template>
 
@@ -8,6 +8,11 @@
 import Loading from '@/components/Loading'
 
 export default {
+  data () {
+    return {
+      isShowLoading: true
+    }
+  },
   mounted () {
   },
   components: {
