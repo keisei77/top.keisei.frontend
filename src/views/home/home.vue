@@ -1,16 +1,21 @@
 <template>
   <div class="home">
-    <div class="test">123</div>
+    <loading></loading>
   </div>
 </template>
 
 <script>
+import Loading from '@/components/Loading'
+
 export default {
   mounted () {
+  },
+  components: {
+    Loading
   }
 }
 </script>
 
-<style lang="less">
-@import 'home';
+<style lang="stylus">
+@import 'home'
 </style>
