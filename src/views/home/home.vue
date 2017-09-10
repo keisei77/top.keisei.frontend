@@ -6,6 +6,11 @@
 
 <script>
 import Loading from '@/components/Loading'
+import Envconst from '../../utils/env'
+
+function getData (vm) {
+  return vm.$_get(`${Envconst.apiDomain}/api/v1/home`)
+}
 
 export default {
   data () {
@@ -14,6 +19,9 @@ export default {
     }
   },
   mounted () {
+    getData(this).then(data => {
+      console.log(data)
+    })
   },
   components: {
     Loading
