@@ -55,7 +55,7 @@ export default {
       setTimeout(function () {
         window.Velocity(
           el,
-          { opacity: 1, color: '#aaffff' },
+          { opacity: 1, color: '#ffffff' },
           { loop: true, delay: 500 },
           { complete: done }
         )
@@ -85,14 +85,21 @@ export default {
   right 0
   bottom 0
   left 0
+  font-family 'Caveat', cursive
+  color #ffffff
   .letters
     display flex
     width 100%
     height 100%
     align-items center
     justify-content center
+    background red
+    background -webkit-linear-gradient(-45deg, rgba(255,0,0,0) 0, rgb(255, 69, 51) 100%)
+    background -o-linear-gradient(-45deg, rgba(255,0,0,0) 0, rgb(255, 69, 51) 100%)
+    background -moz-linear-gradient(-45deg, rgba(255,0,0,0) 0, rgb(255, 69, 51) 100%)
+    background linear-gradient(-45deg, rgba(255,0,0,0) 0, rgb(255, 69, 51) 100%)
     .letter
       padding 0 0.1rem
-      $font-size(16px)
+      $font-size(20px)
       font-weight 700
 </style>
