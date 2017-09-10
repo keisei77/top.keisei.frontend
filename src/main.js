@@ -5,10 +5,11 @@ import App from './App'
 import router from './router'
 import vueTap from 'v-tap'
 import Vuetify from 'vuetify'
+import { httpUtils } from './utils/http-util'
 
 Vue.use(Vuetify)
 Vue.use(vueTap)
-
+httpUtils(Vue)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
