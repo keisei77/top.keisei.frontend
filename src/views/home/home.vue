@@ -21,6 +21,9 @@ export default {
   mounted () {
     getData(this).then(data => {
       console.log(data)
+      setTimeout(() => {
+        this.isShowLoading = false
+      }, 3000)
     })
   },
   components: {
