@@ -21,10 +21,16 @@
     </script>
     <title>top.keisei</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <script src="/static/js/flexible.js"></script>
-    <script src="/static/js/velocity.js"></script>
     <link href='/static/css/material+Icons.css' rel="stylesheet">
     <link href="/static/css/vuetify.min.css" rel="stylesheet">
+    <script src="/static/js/flexible.js"></script>
+    <script src="/static/js/velocity.js"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.0&key=4e5dfb71d77e1d2b4173818c03dd29cf"></script> 
+    <script type="text/javascript">
+      var map = new AMap.Map('mapDiv', {
+         mapStyle: 'amap://styles/1a674feee0192cba5c3989b5c45e45f4'//样式URL
+     });
+    </script>
   </head>
   <body>
     <div id="app"></div>
