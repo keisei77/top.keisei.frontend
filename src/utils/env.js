@@ -3,7 +3,7 @@ const Dev = {
 }
 
 const Prod = {
-  apiDomain: window.location.host
+  apiDomain: window.location.origin
 }
 let Env
 if (window.location.href.indexOf('keisei') > -1 || window.location.href.indexOf('ixiqi') > -1) {
