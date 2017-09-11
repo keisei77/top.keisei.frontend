@@ -3,7 +3,7 @@ const Dev = {
 }
 
 const Prod = {
-  apiDomain: 'https://www.keisei.top'
+  apiDomain: window.location.host
 }
 let Env
 if (window.location.href.indexOf('keisei') > -1 || window.location.href.indexOf('ixiqi') > -1) {
