@@ -20,6 +20,7 @@ export default {
     }
   },
   mounted () {
+    document.title = '自从有了它...'
     setInterval(() => {
       this.hours = new Date().getHours()
       this.minutes = new Date().getMinutes()
@@ -33,7 +34,7 @@ export default {
       return 'right'
     },
     hourStyle () {
-      let deg = this.hours * 32
+      let deg = this.hours * 31
       if (deg < 180) {
         deg -= 5
       }
