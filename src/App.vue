@@ -11,6 +11,9 @@ export default {
 </script>
 
 <style lang="stylus">
+@import './styles/mixin'
+
 #app
   height 100%
+  width 100%
 </style>
