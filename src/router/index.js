@@ -13,6 +13,12 @@ export default new Router({
       component: Home
     },
     {
+      path: '/map',
+      name: 'map',
+      component: () =>
+        import(/* webpackChunkName: "map" */ '@/views/map/map')
+    },
+    {
       path: '/watch',
       name: 'watch',
       component: Watch
